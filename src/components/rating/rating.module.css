@@ -1,0 +1,15 @@
+.ratingButton {
+  color: #7C8798;
+  border: none;
+  cursor: pointer;
+}
+
+.ratingButton:hover {
+  background-color: #7c8798;
+  color: white;
+}
+
+.active {
+  background-color: #fc7614;
+  color: white;
+}
