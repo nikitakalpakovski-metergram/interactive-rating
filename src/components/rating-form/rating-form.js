@@ -7,6 +7,7 @@ import { Rating } from "../rating/rating";
 import { Spacer } from "../spacer/spacer";
 import { Button } from "../button/button";
 import { Card } from "../card/card";
+import styles from "./rating-form.module.css";
 
 const ratingScale = [1, 2, 3, 4, 5];
 
@@ -22,12 +23,7 @@ export function RatingForm({ onRateSubmit }) {
         appreciated to help us improve our offering!
       </CardDescription>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
+      <div className={styles.ratingWrapper}>
         {ratingScale.map((rating) => (
           <Rating
             onClick={() => setSelectedRating(rating)}
